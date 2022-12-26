@@ -1,5 +1,6 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:hyphenapp/screens/splash/splash_screen.dart';
 import 'screens/demo.dart';
 
 void main() {
@@ -13,11 +14,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: AnimatedSplashScreen(
-        splash: const Image(image: AssetImage('assets/logo@3x.png')),
-        duration: 1000,
-        nextScreen: const MyWidget(),
-      ),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const SplashScreen(),
+      },
     );
   }
 }

@@ -13,7 +13,7 @@ class _MyWidgetState extends State<MyWidget> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: const Text('Hyphen'),
+        title: const Text('ghfg'),
       ),
       backgroundColor: Colors.white,
       body: const Center(
